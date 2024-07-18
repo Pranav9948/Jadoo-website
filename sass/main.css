@@ -401,7 +401,7 @@ body {
 }
 @media only screen and (max-width: 31em) {
   .features {
-    margin-top: 0vh;
+    margin-top: 10vh;
   }
 }
 .features__heading-6 {
