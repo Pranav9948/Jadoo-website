@@ -1,0 +1,193 @@
+.footer-section {
+  background-color: $color-primary-white;
+}
+
+.footer {
+  display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+  gap: 7rem;
+    padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 120rem;
+  margin: 0 auto;
+
+   @media only screen and (max-width: 40em) {
+   
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+
+
+
+   padding-left: 2rem;
+  padding-right: 2rem;
+
+
+   @media only screen and (max-width: $bp-large-mobile) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  &__logo {
+    &__name {
+      font-size: 4.4rem;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      color: $color-primary-dark-blue;
+      margin-bottom: 1.9rem;
+
+       @media only screen and (max-width: $bp-large-mobile) {
+    
+    text-align: center;
+       
+    }
+
+    }
+
+    &__description {
+      font-size: 1.3rem;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      color: $color-primary-navy-light-blue;
+
+       @media only screen and (max-width: $bp-large-mobile) {
+    
+    text-align: center;
+       
+    }
+    }
+  }
+
+  &__options {
+    h5 {
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      margin-bottom: 3.5rem;
+      color: #080809;
+
+      @media only screen and (max-width: $bp-large-mobile) {
+      
+        text-align: center;
+       
+    }
+    }
+
+    ul {
+      list-style-type: none;
+      text-decoration: none;
+
+      li {
+        list-style-type: none;
+        text-decoration: none;
+        color: #5e6282;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+
+        @media only screen and (max-width: $bp-large-mobile) {
+      
+        text-align: center;
+       
+    }
+      }
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      .icons-container {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+
+        .social-icons {
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          background-color: $color-accent-yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          @media only screen and (max-width: $bp-large-mobile) {
+    
+    width: 6rem;
+      height: 6rem;
+       
+    }
+
+          i {
+            color: $color-primary-white;
+            font-size: 2rem;
+          }
+
+          &__second {
+            background-image: url("../img/Background.svg");
+            background-color: rgb(215, 50, 193);
+            background-position: center;
+            background-size: cover;
+          }
+
+          &__third {
+            background-color: rgb(97, 184, 237);
+          }
+        }
+      }
+    }
+  }
+
+  .company-caption {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 1rem;
+
+    color: #5e6282;
+
+     @media only screen and (max-width: $bp-large-mobile) {
+    
+      text-align: center;
+       
+    }
+  }
+
+  .app-store-logos {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+     @media only screen and (max-width: $bp-large-mobile) {
+    
+   gap: 3rem;
+       
+    }
+
+    .play {
+      width: 4rem;
+      height: 4rem;
+      background-color: rgb(102, 225, 122);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+
+       @media only screen and (max-width: $bp-large-mobile) {
+    
+        width: 5rem;
+      height: 5rem;
+       
+    }
+    }
+  }
+}

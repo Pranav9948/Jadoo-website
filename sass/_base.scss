@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "GoogleSans";
+  src: url("../fonts/ProductSans-Medium.woff");
+}
+
+$bp-laptop: 81.25em;
+$bp-small-laptop: 70.5em;
+$bp-large-tablet: 54.25em;
+$bp-small-tablet: 46.87em;
+$bp-large-mobile: 31em;
+$bp-small-phones: 22.5em;
+$bp-mini-phones: 20em;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-laptop) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-small-laptop) {
+    font-size: 50.25%;
+  }
+
+  @media only screen and (max-width: 63.625em) {
+    font-size: 43.75%;
+  }
+
+  @media only screen and (max-width: $bp-large-tablet) {
+    font-size: 37.5%;
+  }
+
+  @media only screen and (max-width: $bp-small-tablet) {
+    font-size: 31.5%;
+  }
+
+    @media only screen and (max-width: $bp-large-mobile) {
+    font-size: 43.75%;
+  }
+
+  
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.jadoo-home-page {
+  position: relative;
+}
+
+.svg-header {
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  z-index: -1;
+  transition: right 0.3s ease, top 0.3s ease;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0rem auto;
+  
+  display: grid;
+  grid-template-rows: 120vh repeat(7, min-content);
+  row-gap: 12rem;
+
+   @media only screen and (max-width: $bp-large-mobile) {
+         
+            row-gap: 5rem;
+  }
+  
+
+  @media only screen and (max-width: 40em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

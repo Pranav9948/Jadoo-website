@@ -1,0 +1,84 @@
+.top-destinations {
+
+
+  &__heading-6 {
+    text-align: center;
+    color: $color-primary-navy-light-blue;
+    margin-bottom: 1rem;
+  }
+
+  &__heading-2 {
+    text-transform: capitalize;
+    text-align: center;
+    color: $color-primary-medium-blue;
+  }
+
+  &__cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+
+    
+    @media only screen and (max-width:  $bp-large-mobile) {
+
+      grid-template-columns: minmax(30rem , 1fr) ;
+
+  
+ }
+    gap: 3.6rem;
+    margin: 7rem 0rem;
+    justify-items: center;
+    .top-destination-card {
+      width: 32rem;
+      height: 46rem;
+      border-radius: 2.4rem;
+      overflow: hidden;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      .top-destination-card__image {
+
+       height: 75%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-footer {
+        background-color: $color-primary-white;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        row-gap: 2rem;
+
+        &__country,
+        &__amount {
+          font-size: 1.8rem;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+          text-transform: capitalize;
+          color: $color-primary-navy-light-blue;
+        }
+
+        &__days {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: $color-primary-navy-light-blue;
+
+          i {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        &__amount {
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}

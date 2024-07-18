@@ -1,0 +1,148 @@
+.cta-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #d5d0e6;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  border-radius: 6rem 12rem 2rem 2rem;
+  position: relative;
+   @media only screen and (max-width: $bp-large-mobile) {
+    
+     padding-left: 2rem;
+     padding-right: 3rem;
+     margin-top: 5rem;
+       
+    }
+
+
+  .telegram-symbol {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-secondary-dark-violet,
+      $color-secondary-light-violet
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+
+     @media only screen and (max-width: $bp-large-mobile) {
+    
+       right: 50%;
+    top: 0rem;
+    transform: translate(50%,-50%);
+       
+    }
+
+    i {
+      color: $color-primary-white;
+      font-size: 3rem;
+    }
+  }
+
+  .heading__3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 600;
+    max-width: 88rem;
+    text-align: center;
+    color: $color-primary-navy-light-blue;
+
+    
+    @media only screen and (max-width: $bp-large-mobile) {
+    
+      font-size: 2rem;
+       
+    }
+  }
+
+  .form-section__form {
+    display: flex;
+
+    align-items: center;
+
+    @media only screen and (max-width: $bp-large-mobile) {
+    
+       justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+  }
+
+    .form-input {
+      border-radius: 1rem;
+      width: 42rem;
+      height: 5.8rem;
+      border: none;
+      outline: none;
+      margin-right: 2.4rem;
+      padding: 2.5rem;
+
+      @media only screen and (max-width: $bp-large-mobile) {
+    
+        width: 29.4rem;
+         margin-right:0;
+       
+     
+  }
+    }
+
+    .input-section {
+      position: relative;
+    }
+
+    .messsage-icon {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $color-primary-navy-light-blue;
+      position: absolute;
+      top: 28%;
+      left: 5%;
+
+      @media only screen and (max-width: $bp-large-mobile) {
+    
+      position: absolute;
+      font-size: 1.8rem;
+       top: 28%;
+      left: 5%;
+              
+    }
+    }
+
+    .subscribe-btn {
+      width: 18rem;
+      height: 5.8rem;
+      border-radius: 1rem;
+      border: none;
+      font-size: 1.7rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      color: $color-primary-white;
+      background-image: linear-gradient(
+        to bottom right,
+        $color-secondary-light-red,
+        $color-secondary-dark-red
+      );
+
+      @media only screen and (max-width: $bp-large-mobile) {
+    
+        width: 29.4rem;
+       
+       
+     
+  }
+
+    }
+  }
+}

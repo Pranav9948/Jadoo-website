@@ -1,0 +1,238 @@
+.header {
+  height: 120vh;
+  width: 100%;
+
+
+  z-index: 3;
+
+
+ 
+ @media only screen and (max-width: $bp-large-tablet) {
+      
+  height: 150vh;
+  
+    }
+   
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-top: 2rem;
+
+    img {
+      height: 3.3rem;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+      text-decoration: none;
+      width: 70%;
+
+      li {
+        font-size: 1.7rem;
+        font-family: "GoogleSans";
+        color: $color-secondary-medium-dark-black;
+        display: block;
+
+        a {
+          text-decoration: none;
+          color: $color-secondary-medium-dark-black;
+        }
+      }
+
+      .btn-nav {
+        padding: 0.9rem 2rem;
+        border: 2px solid $color-secondary-dark-black;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .menu-icon {
+  display: none;
+}
+
+  /* Mobile View */
+@media (max-width: 31em) {
+  .navbar {
+    display: flex;
+    // flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+    
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links li a {
+    color: white;
+  }
+
+  .nav-links .btn-nav {
+    border: 2px solid white;
+  }
+}
+
+/* Desktop View */
+
+
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+    
+
+    @media only screen and (max-width: $bp-large-tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    &__text {
+      margin-top: 11.2rem;
+      margin-bottom: 11.2rem;
+
+      @media only screen and (max-width: $bp-large-tablet) {
+        text-align: center;
+      }
+
+      @media only screen and (max-width: $bp-large-tablet) {
+        h1 {
+          max-width: 80rem;
+          margin: 0 auto;
+           letter-spacing: 0.5px;
+        }
+
+         @media only screen and (max-width: $bp-large-mobile) {
+    
+           h1 {
+            font-size: 4.4rem;
+           letter-spacing: 1px;
+          
+           
+          margin: 0 auto;
+          
+
+        }
+       
+        
+  }
+
+      }
+
+      .heading-3 {
+        color: #df6951;
+        text-transform: uppercase;
+        margin-bottom: 2.4rem;
+      }
+
+      &_description {
+        color: $color-primary-navy-light-blue;
+        margin-top: 3rem;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3rem;
+        padding-bottom: 3.4rem;
+
+        @media only screen and (max-width: $bp-large-tablet) {
+          font-size: 1.6rem;
+          max-width: 60rem;
+          margin: 3rem auto;
+
+        }
+
+
+        @media only screen and (max-width: $bp-large-mobile) {
+    
+          max-width: 45rem;
+          margin: 3rem auto;
+       
+        
+  }
+
+
+
+      }
+    }
+
+    &__image {
+      @media only screen and (max-width: $bp-large-tablet) {
+        text-align: center;
+      }
+
+      .flight-img {
+        height: 9.5rem;
+        width: 100%;
+        transform: scale(1.2) translateY(-2rem) translateX(-10rem);
+        animation-name: fly-animation;
+        animation-duration: 10s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+      }
+
+      @keyframes fly-animation {
+        0% {
+          transform: translateX(-20rem) translateY(-4rem) scale(1.4);
+        }
+
+        100% {
+          transform: translateX(10rem) translateY(-6rem) scale(1.4);
+        }
+      }
+
+      .traveller-img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1.2);
+
+        @media only screen and (max-width: $bp-large-tablet) {
+          width: 50%;
+          height: 50%;
+          transform: scale(1);
+        }
+
+
+         @media only screen and (max-width: $bp-large-mobile) {
+    
+           width: 60%;
+          height: 60%;
+          transform: scale(1.1);
+        
+  }
+
+      }
+    }
+  }
+}

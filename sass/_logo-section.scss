@@ -1,0 +1,36 @@
+.logo-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  @media only screen and (max-width: $bp-small-laptop) {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+
+  gap: 7rem;
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 12rem;
+    height: 4rem;
+
+      @media only screen and (max-width: $bp-large-mobile) {
+    
+       
+        justify-self: center;
+  }
+
+
+    img {
+      filter: brightness(90%);
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

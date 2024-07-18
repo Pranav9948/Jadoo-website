@@ -1,0 +1,117 @@
+.Testimonials-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8rem;
+  padding-top: 4rem;
+padding-bottom: 4rem;
+
+ @media only screen and (max-width: $bp-large-mobile) {
+   grid-template-columns: 1fr;
+ 
+  }
+
+ 
+
+  &__captions {
+    .heading-6 {
+      margin-bottom: 0.8rem;
+      color: $color-primary-navy-light-blue;
+
+      
+    @media only screen and (max-width: $bp-large-mobile) {
+     text-align: center;
+  }
+
+    }
+
+    .heading-2 {
+      margin-bottom: 8rem;
+      color: $color-primary-medium-blue;
+
+      
+    @media only screen and (max-width: $bp-large-mobile) {
+     text-align: center;
+  }
+
+    }
+
+    .dots-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+        @media only screen and (max-width: $bp-large-mobile) {
+       justify-content: center;
+  }
+
+      .dots {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: #e5e5e5;
+
+        &__main {
+          background-color: $color-primary-dark-blue;
+        }
+      }
+    }
+  }
+
+  &__user-testimonials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+
+    
+
+    .user-testimonials__image {
+     
+      align-self: flex-start;
+
+        @media only screen and (max-width: $bp-large-mobile) {
+         
+             align-self: flex-start;
+  }
+
+      img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+      }
+    }
+
+    .user-testimonials__details {
+      
+      .description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        color: $color-primary-navy-light-blue;
+        max-width: 40rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .user {
+        font-size: 1.8rem;
+        color: $color-primary-navy-light-blue;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+          @media only screen and (max-width: $bp-large-mobile) {
+          text-align: end;
+  }
+      }
+
+      .location {
+        font-size: 1.4rem;
+        color: $color-primary-navy-light-blue;
+        font-weight: 400;
+            @media only screen and (max-width: $bp-large-mobile) {
+          text-align: end;
+  }
+      }
+    }
+  }
+}

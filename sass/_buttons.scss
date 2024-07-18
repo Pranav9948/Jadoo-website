@@ -1,0 +1,103 @@
+.hero-btn-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
+
+          @media only screen and (max-width: $bp-large-mobile) {
+    
+             grid-template-columns: repeat(1, 1fr);
+          }
+
+        .hero-find-out {
+          padding: 1.9rem 2.6rem;
+          color: $color-primary-white;
+          font-family: GoogleSans;
+          background-color: $color-accent-yellow;
+          border: none;
+          outline: none;
+          border-radius: 1rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+
+          @media only screen and (max-width: $bp-large-tablet) {
+          
+            width: 50%;
+            justify-self: flex-end;
+            
+
+        }
+
+         @media only screen and (max-width: $bp-large-mobile) {
+    
+           width: 50%;
+            justify-self: center;
+          }
+
+        
+
+        
+
+
+        }
+
+        .hero-play-demo {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          border: none;
+          background-color: $color-primary-white;
+
+           @media only screen and (max-width: $bp-large-tablet) {
+          
+            width: 50%;
+            justify-self: flex-start;
+
+
+            @media only screen and (max-width: $bp-large-mobile) {
+    
+         
+            
+            justify-content: center;
+           gap: 3rem;
+           
+          }
+        }
+
+
+         @media only screen and (max-width: $bp-large-mobile) {
+    
+           width: 50%;
+            justify-self: center;
+           
+          }
+
+          &__play-icon {
+
+           
+            background-color: $color-accent-light-red;
+            width: 5.2rem;
+            height: 5.2rem;
+            border-radius: 50%;
+        
+            
+         
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              color: $color-primary-white;
+              font-size: 1.6rem;
+            }
+          }
+
+          &__text {
+             font-family: "Poppins", sans-serif;
+            font-size: 1.7rem;
+            font-style: normal;
+            font-weight: 400;
+            color: $color-primary-light-grey;
+          }
+        }
+      }

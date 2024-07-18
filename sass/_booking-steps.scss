@@ -1,0 +1,256 @@
+.booking-steps-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 12rem;
+  padding-top: 4rem;
+padding-bottom: 4rem;
+
+
+    @media only screen and (max-width:  $bp-large-mobile) {
+
+      grid-template-columns: 1fr;
+    
+      justify-items: center;
+  
+ }
+
+ 
+ 
+
+  .booking-steps {
+    .heading-6 {
+      color: $color-primary-navy-light-blue;
+      margin-bottom: 1.5rem;
+
+          @media only screen and (max-width:  $bp-large-mobile) {
+
+            text-align: center;
+          }
+    }
+
+    .heading-2 {
+      text-transform: capitalize;
+      color: $color-primary-medium-blue;
+      margin-bottom: 3.5rem;
+      @media only screen and (max-width:  $bp-large-mobile) {
+
+            text-align: center;
+            margin-bottom: 5rem;
+          }
+    }
+
+    &__cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 4.8rem;
+      justify-content: center;
+
+ 
+      
+    }
+
+    &__card {
+      display: flex;
+
+      gap: 2rem;
+      align-items: start;
+      
+       @media only screen and (max-width:  $bp-large-mobile) {
+
+             
+              justify-self: center;
+              align-self: center;
+          }
+    }
+
+    &__cards__details {
+      h5 {
+        color: $color-primary-navy-light-blue;
+        margin-bottom: 4px;
+      }
+
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 40rem;
+
+        
+      @media only screen and (max-width:  $bp-large-mobile) {
+
+              max-width: 25rem;
+          }
+
+      }
+    }
+
+    &__cards {
+      position: relative;
+      &__main {
+        width: 37rem;
+        padding: 2rem 2.5rem;
+        border-radius: 2.6rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: relative;
+
+        img {
+          height: 16rem;
+        }
+
+        .card-body {
+          .heading-6 {
+            color: $color-secondary-dark-black-alt;
+            margin-bottom: 1.3rem;
+            margin-top: 1.6rem;
+          }
+
+          &__text {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: $color-accent-light-blue;
+          }
+
+          .icons-container {
+            display: flex;
+            align-items: center;
+            gap: 1.8rem;
+            margin-bottom: 3rem;
+
+            .icon-background {
+              width: 3.6rem;
+              height: 3.6rem;
+              border-radius: 50%;
+              background-color: #f5f5f5;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .icon {
+                width: 1.4rem;
+                height: 1.4rem;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+
+          .people-list {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            &-details {
+              font-family: "Poppins", sans-serif;
+              font-size: 1.6rem;
+              font-style: normal;
+              font-weight: 400;
+              color: $color-accent-light-blue;
+            }
+          }
+        }
+
+        .people-list-container{
+
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+
+          i{
+
+            font-size: 2rem;
+            color: $color-accent-light-blue-variant;
+          }
+        }
+      }
+
+      &__sub {
+        padding: 1.6rem 2rem;
+    
+        width: 24rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border-radius: 1.8rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        background-color: $color-primary-white;
+
+
+        @media only screen and (max-width:  $bp-large-mobile) {
+
+           display: none;
+          }
+
+        .cards-icon {
+          height: 6rem;
+          width: 6rem;
+          border-radius: 50%;
+
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+
+        .cards-text {
+          .sub-heading {
+            font-family: "Poppins", sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: -0.50px;
+            font-weight: 400;
+            margin-bottom: 0.6rem;
+            color: $color-accent-light-blue-variant;
+          }
+
+          .trip-heading{
+
+            font-family: "Poppins", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+          }
+
+          .progress{
+
+            color: $color-accent-light-blue-variant;
+          }
+
+          .progress-container {
+            background-color: rgb(192, 192, 192);
+            width: 50%;
+            border-radius: 15px;
+            margin-top: .5rem;
+           
+            
+          }
+
+          .skill {
+            background-color: $color-accent-light-blue-variant;
+            color: white;
+            padding: 1%;
+            text-align: right;
+            font-size: 2rem;
+            border-radius: 1.5rem;
+            height: 0.5rem;
+          }
+
+          .php {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
